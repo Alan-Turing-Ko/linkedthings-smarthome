@@ -1,0 +1,30 @@
+{
+  "name": "linkedthings-smartoffice",
+  "version": "1.0.0",
+  "description": "Smart home project that allows users to control various household appliances via app. Built using IBM watson IoT platform and Cloudant database.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Cloudant",
+    "IoTWatson",
+    "SmartHome"
+  ],
+  "author": "Syed Hammad Ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cloudant": "^1.10.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-joi-validator": "^2.0.0",
+    "ibmiotf": "^0.2.40",
+    "joi": "^13.1.0",
+    "jsonwebtoken": "^8.1.0",
+    "morgan": "^1.9.0",
+    "swagger-ui-express": "^2.0.14",
+    "uuid": "^3.1.0"
+  }
+}
