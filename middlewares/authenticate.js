@@ -4,7 +4,6 @@ var dotenv = require('dotenv');
 dotenv.load();
 
 module.exports = {
-    // Basic authorization
     verify: function(req, res, next) {
         var token = req.headers.authorization;
         if(!token) {
