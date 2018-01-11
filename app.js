@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var dotenv = require('dotenv');
 
 // Require all routes.
+var roomsRoutes = require('./routes/roomsRoute');
 var usersRoutes = require('./routes/usersRoute');
 var organizationsRoutes = require('./routes/organizationsRoute');
 
@@ -20,6 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Use all routes.
+app.use('/api/v1/', roomsRoutes);
 app.use('/api/v1/', usersRoutes);
 app.use('/api/v1/', organizationsRoutes);
 
