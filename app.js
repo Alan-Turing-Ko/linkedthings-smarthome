@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var dotenv = require('dotenv');
 
 // Require all routes.
+var usersRoutes = require('./routes/usersRoute');
 var organizationsRoutes = require('./routes/organizationsRoute');
 
 // Load environment variables.
@@ -19,6 +20,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Use all routes.
+app.use('/api/v1/', usersRoutes);
 app.use('/api/v1/', organizationsRoutes);
 
 // Start the server.
